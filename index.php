@@ -1,12 +1,18 @@
 <?php 
 require_once "./Classes/Movie.php";
+require_once "./Classes/Genre.php";
+require_once "./db/db.php";
 
-$nataleInIndia = new Movie("Natale in india", "Neri Parenti", "Comico", 2003);
-$shutterIsland = new Movie("Shutter Island", "Martin Scorsese", "Thriller", 2010);
 
-echo $nataleInIndia->getInfos();
+
+echo $movies[0]->getInfosNoGenre();
 echo "<br>";
-echo $shutterIsland->getInfos();
+echo $movies[0]->getGenre();
+echo "<br>";
+echo $movies[1]->getInfosNoGenre();
+echo "<br>";
+echo $movies[1]->getGenre();
+
 
 ?>
 
